@@ -3,7 +3,7 @@ const Web3 = require('web3');
 const { interface, bytecode } = require('./compile');
 
 const provider = new HDWalletProvider(
-  `$YOUR_METAMASK_RECOVERY_CODE`
+  `$YOUR_METAMASK_RECOVERY_CODE`,
   '$RINKEBY_INFURA_API'
 );
 const web3 = new Web3(provider);
