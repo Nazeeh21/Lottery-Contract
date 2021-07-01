@@ -16,6 +16,7 @@
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
+    "dotenv": "^10.0.0",
     "fs-extra": "^10.0.0",
     "ganache-cli": "^6.12.2",
     "mocha": "^8.3.2",
