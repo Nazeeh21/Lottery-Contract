@@ -56,4 +56,5 @@ const abi = [
   },
 ];
 
+// @ts-ignore
 export default new web3.eth.Contract(abi, address);

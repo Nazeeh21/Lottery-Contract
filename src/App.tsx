@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import lottery from './lottery';
 import web3 from './web3';
 
-const App = () => {
+const App: React.FC = () => {
   const [manager, setManager] = useState('');
   const [players, setPlayers] = useState([]);
   const [contractBalance, setContractBalance] = useState('');
@@ -24,7 +24,7 @@ const App = () => {
     init();
   }, []);
 
-  const submitForm = async (e) => {
+  const submitForm = async (e: any) => {
     e.preventDefault();
 
     const accounts = await web3.eth.getAccounts();
