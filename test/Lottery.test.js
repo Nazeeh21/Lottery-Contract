@@ -20,7 +20,7 @@ describe('Lottery Contract', () => {
     assert.ok(lottery.options.address);
   });
 
-  it('allows 1 account to ether', async () => {
+  it('allows 1 account to enter', async () => {
     await lottery.methods.enter().send({
       from: accounts[0],
       value: web3.utils.toWei('0.02', 'ether'),
